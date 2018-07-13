@@ -11,13 +11,13 @@
     
     <div v-if="Pagination" class="row" style="margin-top: 10px">
       <div class="col-sm-6" style="white-space: nowrap">
+        <pagination class="pull-right" :total="total" :query="query" />
+      </div>
+      <div class="col-sm-6">
         <strong>
           {{ $i18nForDatatable('Total') }} {{ total }} {{ $i18nForDatatable(',') }}
         </strong>
         <page-size-select :query="query" :page-size-options="pageSizeOptions" />
-      </div>
-      <div class="col-sm-6">
-        <pagination class="pull-right" :total="total" :query="query" />
       </div>
     </div>
   </div>
