@@ -13,7 +13,7 @@
       <div class="col-sm-6" style="white-space: nowrap">
         <pagination class="pull-right" :total="total" :query="query" />
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 text-right">
         <strong>
           {{ $i18nForDatatable('Total') }} {{ total }} {{ $i18nForDatatable(',') }}
         </strong>
