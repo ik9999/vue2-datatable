@@ -11,7 +11,7 @@
     
     <div v-if="Pagination" class="row" style="margin-top: 10px">
       <div class="col-sm-6" style="white-space: nowrap">
-        <pagination class="pull-right" :total="total" :query="query" />
+        <pagination class="pull-right" :total="total" :query="query" ref="pagination" />
       </div>
       <div class="col-sm-6 text-right">
         <strong>
